@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.heke.rihappclient">
+
+    <!-- SMSSDK需要的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <!-- h5权限 -->
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_klloge1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.ServerUrlActivity" />
+        <activity android:name=".view.TitleView" />
+        <activity android:name=".activity.HPChoseActivity" />
+        <activity
+            android:name=".activity.HpaddActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.CaptureActivity" />
+        <activity android:name=".activity.UserPwdActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.HelperActivity" />
+        <activity
+            android:name=".activity.PandiandetailsListActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".activity.DemoActivity" />
+        <activity android:name=".activity.Main2Activity"></activity>
+        <activity android:name=".activity.LoginNewActivity"/>
+        <activity android:name=".activity.WebviewActivity"/>
+        <activity android:name=".activity.zxingActivity"/>
+        <activity android:name=".activity.TaskListActivity"/>
+        <activity android:name=".activity.Task_DetailsActivity"/>
+        <activity android:name=".activity.SabotActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.Task_FinishActivity"/>
+        <activity android:name=".activity.TaskIndexActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PandianIndexActivity"/>
+        <activity android:name=".activity.PandianDetailActivity"/>
+        <activity android:name=".activity.PurchaseDetailActivity"/>
+        <activity android:name=".activity.PurchaseIndexActivity"/>
+        <activity android:name=".activity.OutStoreIndexActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.OutStoreDetailActivity"/>
+        <activity android:name=".activity.EquipmentTaskIndexActivity"/>
+        <activity android:name=".activity.EquipmentTaskListActivity"/>
+        <activity android:name=".activity.EquipmentTaskFinishActivity"/>
+        <activity android:name=".activity.EquipmentAddDetailsActivity"/>
+        <activity android:name=".activity.QC_DetailsActivity"/>
+        <activity android:name=".activity.QC_Details_mainActivity"/>
+        <activity android:name=".activity.QC_listActivity"/>
+        <activity android:name=".activity.QC_editDetailsActivity"/>
+        <activity android:name=".activity.Test1"/>
+        <activity android:name=".activity.RollActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.Sabot_detailsListActivity"/>
+        <activity android:name=".activity.PlantMainActivity"/>
+        <activity android:name=".activity.OutStoreDetail_zt_Activity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>//键盘设置
+        <activity android:name=".activity.OutStoreListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.OutStoreDetail_KL_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.InStoreListActivity"
+            android:screenOrientation="portrait"/>//竖屏显示,禁止旋转
+        <activity android:name=".activity.InStoreIndexActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.InStoreDetail_KL_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PandianStoreListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PandianStoreIndexActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PandianStoreDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PlantOutStoreListActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+
+</manifest>

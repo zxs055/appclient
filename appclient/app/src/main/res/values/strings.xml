@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">安徽金缆移动应用</string>
+    <string name="version">RH-2017-1.0.1</string>
+    <string name="serviceqq">147594951</string>
+    <string name="serviceemail">147594951@qq.com</string>
+    <string name="servicephon">13856915680</string>
+    <string name="support">安徽金缆</string>
+    <string name="copyright">安徽金缆版权所有</string>
+    <string name="view_loading_text">加载中…</string>
+    <string name="icon_text_ok">\ue628</string>
+    <string name="workhomepage_name">工作台</string>
+    <string name="messagepage_name">消息</string>
+    <string name="sumerPage_name">统计</string>
+    <string name="myPage_name">我的</string>
+    <string name="hint_text">请输入条码</string>
+    <string name="hint_text1">请扫条码</string>
+    <string name="banbenid">版本号：YPAPP 1.6   </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 箭头 -->
+    <string name="text_arrow_down">\ue64b</string>
+    <string name="text_arrow_up">\ue64a</string>
+    <string name="text_arrow_right">\ue64c</string>
+    <string name="text_arrow_left">\ue64d</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">加载更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+</resources>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style type="text/css">
+div {
+     align: center;
+}
+</style>
+    <script type="text/javascript">
+    function btnLogin() {
+        var name = document.getElementById("name").value;
+        var psd = document.getElementById("psd").value;
+        login(name,psd);
+    }
+    function login(name,psd){
+         myObj.fun2(name,psd);
+    }
+
+</script>
+</head>
+<body>
+<div id="pid">
+    账号登录
+    <br/>
+    <br/>
+    账号 : <input id="name" type="text"></div>
+<br/>
+密码 : <input id="psd" type="password"></div>
+<br/>
+<br/>
+记住密码<input type="checkbox"/> <a href="https://user.qzone.qq.com/308090180/infocenter" target="_blank">忘记密码</a>
+<br/>
+<br/>
+
+<button onclick="btnLogin()">登录</button>
+</div>
+</body>
+</html>

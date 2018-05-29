@@ -1,0 +1,73 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 11624 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#
+#  Out of Memory Error, pid=2268
+#
+0x00007ffc59310000 - 0x00007ffc59475000 	C:\Windows\System32\USER32.dll
+0x00007ffc57f10000 - 0x00007ffc57f2e000 	C:\Windows\System32\win32u.dll
+0x00007ffc59070000 - 0x00007ffc590a4000 	C:\Windows\System32\GDI32.dll
+0x00007ffc58630000 - 0x00007ffc587b2000 	C:\Windows\System32\gdi32full.dll
+0x00007ffc4d430000 - 0x00007ffc4d6aa000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.953_none_42151e83c686086b\COMCTL32.dll
+0x00007ffc5a990000 - 0x00007ffc5ac58000 	C:\Windows\System32\combase.dll
+0x00007ffc58310000 - 0x00007ffc58405000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffc582a0000 - 0x00007ffc5830a000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffc58f00000 - 0x00007ffc58f2e000 	C:\Windows\System32\IMM32.DLL
+0x00000000629d0000 - 0x0000000062aa2000 	D:\2.develop_tools\JAVA\JDK\jre\bin\msvcr100.dll
+0x0000000062130000 - 0x00000000629cf000 	D:\2.develop_tools\JAVA\JDK\jre\bin\server\jvm.dll
+0x00007ffc5acf0000 - 0x00007ffc5acf8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffc49080000 - 0x00007ffc49089000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffc56280000 - 0x00007ffc562a3000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffc535f0000 - 0x00007ffc535fa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffc5ae60000 - 0x00007ffc5aeca000 	C:\Windows\System32\WS2_32.dll
+0x00007ffc561f0000 - 0x00007ffc5621b000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffc57fd0000 - 0x00007ffc58012000 	C:\Windows\System32\cfgmgr32.dll
+0x0000000062120000 - 0x000000006212f000 	D:\2.develop_tools\JAVA\JDK\jre\bin\verify.dll
+0x00000000620f0000 - 0x0000000062119000 	D:\2.develop_tools\JAVA\JDK\jre\bin\java.dll
+0x00000000620d0000 - 0x00000000620e6000 	D:\2.develop_tools\JAVA\JDK\jre\bin\zip.dll
+0x00007ffc59480000 - 0x00007ffc5a989000 	C:\Windows\System32\SHELL32.dll
+0x00007ffc58820000 - 0x00007ffc58efa000 	C:\Windows\System32\windows.storage.dll
+0x00007ffc57e00000 - 0x00007ffc57e4c000 	C:\Windows\System32\powrprof.dll
+0x00007ffc590b0000 - 0x00007ffc59102000 	C:\Windows\System32\shlwapi.dll
+0x00007ffc57e50000 - 0x00007ffc57e5f000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffc57e60000 - 0x00007ffc57f09000 	C:\Windows\System32\shcore.dll
+0x00007ffc57dd0000 - 0x00007ffc57de4000 	C:\Windows\System32\profapi.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx4g -Dfile.encoding=GBK -Duser.country=CN -Duser.language=zh -Duser.variant 
+java_command: com.android.dx.command.Main --dex --num-threads=4 --multi-dex --main-dex-list D:\3.Code\MyAppProject\ahjl_app\appclient\app\build\intermediates\multi-dex\debug\maindexlist.txt --output D:\3.Code\MyAppProject\ahjl_app\appclient\app\build\intermediates\transforms\dex\debug\folders\1000\1f\main D:\3.Code\MyAppProject\ahjl_app\appclient\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar
+java_class_path (initial): D:\2.develop_tools\SDK\build-tools\25.0.2\lib\dx.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\2.develop_tools\JAVA\JDK
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\2.develop_tools\JAVA\JDK\bin;D:\2.develop_tools\JAVA\JDK\jre\bin;E:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;E:\Program Files\Microsoft SQL Server\100\Tools\Binn\;E:\Program Files\Microsoft SQL Server\100\DTS\Binn\;E:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;E:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 14393 (10.0.14393.0)
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 23 model 17 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 7287484k(1718664k free), swap 8860348k(108k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.161-b12) for windows-amd64 JRE (1.8.0_161-b12), built on Dec 19 2017 17:52:25 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Mon Mar 26 10:27:20 2018
+elapsed time: 8 seconds (0d 0h 0m 8s)
+

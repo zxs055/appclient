@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+           <!-- <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="7.0dip"
+                android:layout_marginTop="7.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="单号："
+                    android:textColor="@color/ziti1"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_billcode"
+                    android:layout_width="200.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="123"
+                    android:textColor="@color/blue"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="单据类型："
+                    android:textColor="@color/ziti1"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_kindname"
+                    android:layout_width="150.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="123"
+                    android:textColor="@color/blue"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="数量："
+                    android:textColor="@color/ziti1"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="50.0dip"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="2344d"
+                    android:textColor="@color/blue"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="金额："
+                    android:textColor="@color/ziti1"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="80.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="234999"
+                    android:textColor="@color/blue"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

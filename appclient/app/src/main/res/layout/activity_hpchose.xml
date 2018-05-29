@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_light">
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/theme_orange"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40.0dip"
+            android:layout_height="35.0dip"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/back_white_btn" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="货品添加"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15.0dip"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tablayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ff444444"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/show_hp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="添加完成"
+            android:textColor="@color/ziti1"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/tabpager"
+        layout="@layout/hpinfo_searchfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tablayout"
+        android:layout_below="@id/titlelayout"
+        android:layout_gravity="center"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/add_hp"
+        android:layout_width="80.0dip"
+        android:layout_height="53.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_gravity="bottom|center"
+            android:src="@mipmap/shoppingcar" />
+
+        <TextView
+            android:id="@+id/numbershow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|top"
+            android:background="@mipmap/numtip1"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="13.0sp" />
+    </FrameLayout>
+</RelativeLayout>

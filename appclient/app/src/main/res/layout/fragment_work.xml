@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_background_grey">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:layout_marginTop="0.0dip"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_img_top"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@mipmap/company_introduce_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cgorderLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="1.0dip"
+            android:background="@drawable/app_click_white_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15.199982dip"
+            android:paddingTop="15.199982dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.799988dip"
+                android:src="@mipmap/cgorder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.399994dip"
+                android:layout_weight="1.0"
+                android:text="采购订单"
+                android:textColor="@color/ziti1"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="添加"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.799988dip"
+                android:src="@mipmap/advance_gray_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mddiaobodanLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="2.0px"
+            android:background="@drawable/app_click_white_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15.199982dip"
+            android:paddingTop="15.199982dip">
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.799988dip"
+                android:src="@mipmap/new_db_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.399994dip"
+                android:layout_weight="1.0"
+                android:text="门店采购申请"
+                android:textColor="@color/ziti1"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="查看"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.799988dip"
+                android:src="@mipmap/advance_gray_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xsorderLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="2.0px"
+            android:background="@drawable/app_click_white_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15.199982dip"
+            android:paddingTop="15.199982dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.799988dip"
+                android:src="@mipmap/xsorder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.399994dip"
+                android:layout_weight="1.0"
+                android:text="销售订单"
+                android:textColor="@color/ziti1"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="添加"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.799988dip"
+                android:src="@mipmap/advance_gray_btn" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/dcdiaobodanLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="2.0px"
+            android:background="@drawable/app_click_white_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15.199982dip"
+            android:paddingTop="15.199982dip">
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.799988dip"
+                android:src="@mipmap/new_db_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.399994dip"
+                android:layout_weight="1.0"
+                android:text="仓库调拨单据"
+                android:textColor="@color/ziti1"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="查看"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.799988dip"
+                android:src="@mipmap/advance_gray_btn" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/pandianLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="2.0px"
+            android:background="@drawable/app_click_white_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15.199982dip"
+            android:paddingTop="15.199982dip">
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.799988dip"
+                android:src="@mipmap/new_pd_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.399994dip"
+                android:layout_weight="1.0"
+                android:text="盘点单据"
+                android:textColor="@color/ziti1"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="添加"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.799988dip"
+                android:src="@mipmap/advance_gray_btn" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/myorderLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="2.0px"
+            android:background="@drawable/app_click_white_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15.199982dip"
+            android:paddingTop="15.199982dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.799988dip"
+                android:src="@mipmap/myorder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.399994dip"
+                android:layout_weight="1.0"
+                android:text="我的订单"
+                android:textColor="@color/ziti1"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="查看"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.799988dip"
+                android:src="@mipmap/advance_gray_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="35dip"
+    android:textColor="#ffdb7610"
+    android:paddingTop="5.0dip"
+    android:textSize="20.0sp"
+    android:id="@+id/list_item_textview" >
+</TextView>

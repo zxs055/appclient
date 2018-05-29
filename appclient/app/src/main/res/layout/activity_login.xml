@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/bg_denglu"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="23.0dip"
+        android:layout_marginRight="23.0dip"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_klloge1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.599976dip"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="24.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/shape17"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/serverlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@mipmap/servers_btn" />
+
+                <TextView
+                    android:id="@+id/serverTxt"
+                    style="@style/apptextcolorhint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="start"
+                    android:hint="请选择组织机构"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="12.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@mipmap/advance_white_btn" />
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1.0px"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:background="#80ffffff"-->
+                <!--/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="16.0dip"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="5.0dip"-->
+                    <!--android:src="@mipmap/company_btn" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/companyEdit"-->
+                    <!--style="@style/apptextcolorhint"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10.0dip"-->
+                    <!--android:background="@null"-->
+                    <!--android:ellipsize="start"-->
+                    <!--android:hint="组织机构"-->
+                    <!--android:editable="false"-->
+                    <!--android:paddingLeft="10.0dip"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16.0sp" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/downImgViewcompany"-->
+                    <!--android:layout_width="20.0dip"-->
+                    <!--android:layout_height="12.0dip"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10.0dip"-->
+                    <!--android:layout_marginRight="10.0dip"-->
+                    <!--android:background="@mipmap/advance_white_btn" />-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginTop="10.0dip"
+                android:background="#80ffffff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@mipmap/username_btn" />
+
+                <EditText
+                    android:id="@+id/usernameEdit"
+                    style="@style/apptextcolorhint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:ellipsize="start"
+                    android:hint="请输入用户名"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@+id/downImgView"
+                    android:layout_width="20.0dip"
+                    android:layout_height="12.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@mipmap/advance_white_btn" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginTop="10.0dip"
+                android:background="#80ffffff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@mipmap/password_btn" />
+
+                <EditText
+                    android:id="@+id/passwordEdit"
+                    style="@style/apptextcolorhint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:ellipsize="start"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <CheckBox
+                    android:id="@+id/eye"
+                    android:layout_width="20.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:button="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/selector_btnpress2"
+            android:text="登  录"
+            android:textColor="@drawable/selector_textcolor"
+            android:textSize="18.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.399994dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/setlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/exp_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:text="系统设置"
+                    android:textColor="#ff666666" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/banbenid"
+                android:textColor="#ff666666" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

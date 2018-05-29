@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_background_grey"
+    android:orientation="vertical">
+
+    <com.heke.rihappclient.view.TitleView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.heke.rihappclient.view.TitleView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40.0dip"
+            android:scaleType="centerInside"
+            android:src="@mipmap/home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/app_name"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/version"
+            android:textColor="#ff666666"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="客服QQ"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="@string/serviceqq"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="技术支持"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="@string/support"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="技术支持邮箱"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="@string/serviceemail"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="客服电话"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="@string/servicephon"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="公司官网"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="www.ypgd.com"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:textColor="#ff999999"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="copyright©2017-2027"
+            android:textColor="#ff999999"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+</LinearLayout>

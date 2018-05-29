@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true"
+                android:text="到货通知单号："
+                android:textColor="@color/gray_text"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_billcode"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip"
+                android:singleLine="true"
+                android:text="123"
+                android:textColor="@color/blue"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true"
+                android:text="单据状态："
+                android:textColor="@color/gray_text"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_billstate"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:lines="2"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="100"
+                android:textColor="@color/blue"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true"
+                android:text="供应商："
+                android:textColor="@color/gray_text"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_client"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip"
+                android:singleLine="true"
+                android:text="123"
+                android:textColor="@color/blue"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

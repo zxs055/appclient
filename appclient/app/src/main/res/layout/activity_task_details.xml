@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_background_grey"
+    android:orientation="vertical">
+
+    <include android:id="@+id/main_title"
+        layout="@layout/title_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <include
+        layout="@layout/button_framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:id="@+id/main_btntop"
+        android:layout_alignParentBottom="true"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_btntop"
+        android:layout_below="@id/main_title"
+        android:layout_marginBottom="5.0dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/itemselector"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="生产计划单"
+                        android:textColor="@color/umeng_fb_color_btn_normal"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/billcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="6.0dip"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="6.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:editable="false"
+                        android:background="@null"
+                        android:textColor="@color/blue"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/itemselector"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center_vertical"
+                        android:text="任务清单号"
+                        android:textColor="@color/umeng_fb_color_btn_normal"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/storename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="6.0dip"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:editable="false"
+                        android:background="@null"
+                        android:textColor="@color/blue"
+                        android:textSize="16.0sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="计划指令号："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="16.0dip" />
+
+                        <TextView
+                            android:id="@+id/invname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="000005"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="订单分段数量："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="14.0dip" />
+
+                        <TextView
+                            android:id="@+id/ddfdsl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="1000"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="工艺指令单号："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="14.0dip" />
+
+                        <TextView
+                            android:id="@+id/gyzldh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="KVV_2*2.5_成缆_黑"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="产品规格："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="16.0dip" />
+
+                        <TextView
+                            android:id="@+id/invspec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="6"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="工序数量："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="16.0dip" />
+
+                        <TextView
+                            android:id="@+id/batchCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="3036"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="派工数量："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="16.0dip" />
+
+                        <TextView
+                            android:id="@+id/pgsl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="3036"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="标准类型："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="16.0dip" />
+
+                        <TextView
+                            android:id="@+id/bzlx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="G"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="计量单位："
+                            android:textColor="#ff333333"
+                            android:textIsSelectable="false"
+                            android:textSize="16.0dip" />
+
+                        <TextView
+                            android:id="@+id/positionName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="6.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="米"
+                            android:textColor="@color/blue"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

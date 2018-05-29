@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.heke.appclient"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            multiDexEnabled true
+            minifyEnabled false
+            //移除无用的资源文件
+            shrinkResources false
+            zipAlignEnabled false
+            debuggable false
+            jniDebuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'x86_64'
+            universalApk true
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    // 使用百度定位需要
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs' //就是你放aar的目录地址
+        }
+    }
+    /* allprojects {
+        gradle.projectsEvaluated {
+            tasks.withType(JavaCompile) {
+                options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+            }
+        }
+    }*/
+}
+
+dependencies {
+    provided fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //retrofit
+    // 开源弹出式Toast
+    compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
+        // exclusion is not neccessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    //炫酷的dialog
+    // 例子动画
+    // 闪动加载
+    // 另一种方式的Dialog弹出方式
+    // 带记忆功能的搜索框
+    //compile 'com.github.mancj:MaterialSearchBar:0.3.1'
+    // 奇特的RecyclerView
+    // 进度条水平方向
+    // 弹起式日期控件
+    // 支持下拉刷新和上拉加载的RecyclerView
+    // Material Design风格的输入框开源
+    // 网络访问框架okgo 封装okhttp
+    // 圆形image
+    // 九宫格图片展示和仿微信图片选择
+    //最新版本
+    // LeakCanary
+    // photo
+    // multidex
+    compile files('libs/core-3.2.1.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //compile 'com.lzy.net:okgo:+'
+    compile files('libs/okgo-2.1.4.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.code.gson:gson-parent:2.8.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.sd6352051.niftydialogeffects:niftydialogeffects:1.0.0@aar'
+    compile 'me.wangyuwei:ParticleView:1.0.5'
+    compile 'com.elyeproj.libraries:loaderviewlibrary:1.2.1'
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.7.0'
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    compile 'com.philliphsu:bottomsheetpickers:2.0.0'
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.lzy.widget:ninegridview:0.2.0'
+    compile 'com.lzy.widget:imagepicker:+'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+}
+
+
+
+
+
+
